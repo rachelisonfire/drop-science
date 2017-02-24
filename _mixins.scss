@@ -1,0 +1,43 @@
+/* ==========================================================================
+    Colors
+   ========================================================================== */
+  
+  $white: #FFFFFF;
+  $light-backdrop: #F8F8F8;
+  $off-white: #F5F5F5; //video section
+  $dark-blue: #434F62;
+  $sky-blue: #00AFE6;
+  $orange: #FF3C20;
+  
+  $navy: #293D56;
+  $grey: #89909B;
+  $silver: #BEC0C3; 
+     
+   /* ==========================================================================
+    Fonts
+   ========================================================================== */
+   
+   @mixin r400() {
+     font-family: 'Raleway', sans-serif; font-weight: 400;
+   }
+   
+   @mixin r500() {
+     font-family: 'Raleway', sans-serif; font-weight: 500;
+   }
+   
+   @mixin r600() {
+     font-family: 'Raleway', sans-serif; font-weight: 600;
+   }
+   
+   @mixin r700() {
+     font-family: 'Raleway', sans-serif; font-weight: 700; 
+   }
+   
+   @mixin l500() {
+	   font-family: "lato"; font-weight: 500;
+   }
+   
+   @mixin l700() {
+     font-family: "Lato"; font-weight: 700;
+   }
+   

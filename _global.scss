@@ -1,0 +1,43 @@
+   
+/* ==========================================================================
+   Global Button Styles
+   ========================================================================== */
+   
+.button {
+  @include r700; text-transform: uppercase; color: $white; background: $orange; font-size: 18px; text-decoration: none; display: inline-block; border-radius: 15px; position: relative; transition: all .1s ease-in; @include transform(scale(1));
+  &.blue {
+    @include r700; color: $white; background: $sky-blue;
+    &:hover { background: darken($sky-blue,10%); border-radius: 0; @include transform(scale(2)); }
+  }
+}
+
+   
+/* ==========================================================================
+   Global Header Styles
+   ========================================================================== */
+
+h2 { 
+  @include r600; text-transform: uppercase; color: $navy; font-size: 56px;
+  }
+  
+h3 {
+  @include r700; font-size: 21px; color: $navy;
+}
+
+/* ==========================================================================
+   Columns
+   ========================================================================== */
+     
+.flex-parent {
+  @include display(flex); @include flex-wrap(wrap); @include justify-content(space-around);
+
+  .flex-child { 
+    width: 30%; margin: 15px 0;
+    a.button { padding: 15px 20px; margin: 40px auto; font-size: 16px; max-width: 140px; }
+    @media screen and (max-width: 880px) {
+      width: 50%; 
+    }
+    
+
+  }
+} 

@@ -1,0 +1,110 @@
+/*
+//      _/      _/    _/_/    _/_/_/  _/      _/
+//     _/_/  _/_/  _/    _/    _/    _/_/    _/
+//    _/  _/  _/  _/_/_/_/    _/    _/  _/  _/
+//   _/      _/  _/    _/    _/    _/    _/_/
+//  _/      _/  _/    _/  _/_/_/  _/      _/
+*/
+
+/* ==========================================================================
+   HTML, Body & Wrapper
+   ========================================================================== */
+   
+ body { color: #fff; @include r400; font-size: 15px; }
+ .container { max-width: 1200px; position: relative; margin: 0 auto; padding: 0 20px; text-align: center;  }
+   
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Site Header
+   ========================================================================== */
+
+header#site-header { 
+  position: absolute; top: 0; left: 0; right: 0; z-index: 2; padding: 20px 0;
+  .container {
+    text-align: right; 
+    #site-logo {
+      display: block; background-image: url('../img/site-logo.png'); background-repeat: no-repeat; float: left; width: 162px; height: 70px;
+    }
+    ul { 
+      padding-top: 20px;
+      li {
+        display: inline-block; margin-right: 5px; 
+        &:last-of-type { margin-right: 0; }
+        a {
+          text-decoration: none; @include r700; font-size: 15px; color: $white; padding: 10px; text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+  
+   
+/* ==========================================================================
+   Page Header
+   ========================================================================== */
+
+header#page-header { 
+  position: relative; padding: calc(10% + 110px) 0 10%;
+  &.bg-image { background-image: url('../img/header-background.png'); background-size: cover; }
+  .container { text-align: left; 
+  h1 { @include r700; font-size: 86px; text-transform: uppercase; max-width: 470px; }
+  p { padding-top: 3%; line-height: 26px; max-width: 470px; text-align: left; }
+  a.button { 
+    position: relative; color: $white; padding: 25px 35px; margin-top: 40px;
+  }
+  }
+  .mouse-icon { position: absolute; top: 100%; left: 50%; background-image: url('../img/mouse-icon.png'); width: 80px; height: 147px; margin-left: -40px; margin-top: -40px; }
+}
+   
+/* ==========================================================================
+   Page Content
+   ========================================================================== */
+  
+
+  
+
+  
+   
+/* ==========================================================================
+   Page Footer
+   ========================================================================== */
+
+footer#page-footer {
+  position: relative; height: 560px; background-position: center center;  
+  &.map { background-image: url('../img/foot-map.png'); background-size: cover; }
+}	   
+		 
+/* ==========================================================================
+   Site Footer
+   ========================================================================== */
+  
+footer#site-footer {
+  position: relative; z-index: 2; background-color: $orange; padding: 42px 0 35px 0; 
+  .container {
+    text-align: right;
+    p { float: left; @include r700;  } 
+    ul { 
+      li {
+        display: inline-block; margin-right: 20px; 
+        &:last-of-type { margin-right: 0; }
+        a {
+          text-decoration: none; @include r700; font-size: 15px; color: $white; padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+  
+  
+
+
+   
+   
+
+

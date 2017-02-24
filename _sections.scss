@@ -1,0 +1,201 @@
+/* ==========================================================================
+   Global Section Styles
+   ========================================================================== */
+
+section.content {
+  .container { padding: 3% 20px; text-align: center; @include clearfix; }
+  &.bg-white { background: #fff; margin: 9% auto;
+    p { @include r400; color: $grey; font-size: 15px; line-height: 26px; 
+    }
+  }
+  &.bg-beige { background: $light-backdrop; }
+  &.bg-orange { background: $orange; }
+  &.bg-image { background-image: url('../img/header-background.png'); }
+  
+   
+  header.section-header {
+    margin-bottom: 6%;
+    h2 {
+      font-size: 56px; text-transform: uppercase; position: relative; margin-bottom: 7%;
+      &::after { content: ''; position: absolute; top: 100%; margin-top: 30px; left: 50%; margin-left: -35px; width: 75px; height: 3px; background-color: $orange; } 
+      }
+    p { 
+      @include r400; color: $grey; margin: 0 auto; max-width: 570px; font-size: 21px; line-height: 30px;
+    }
+    }
+
+  }
+  ul { list-style: none; }
+
+
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+   
+  .info-block {
+    
+    
+    .flex-parent {
+
+      .flex-child {
+        background-color: $light-backdrop;
+        h3 { 
+          padding-top: 60px; 
+          }
+        p {
+          @include r500; font-size: 15px; line-height: 26px; color: $grey; padding: 30px 30px 40px 30px;  
+          }
+      
+      }
+      .circle-icon { position: absolute; top: 50%; left: 50%; background-image: url('../img/more.png'); width: 78px; height: 78px; margin-left: -39px; margin-top: -39px; 
+      }
+    }  
+  }
+    
+    
+  #image-text {
+    .item { 
+      @include clearfix; margin: 0 auto; padding: 5% 0;
+        
+
+      img, .text { float: left; }
+      img { width: 40%; }
+      .text { width: 60%; padding-top: 5.5%; }
+      &.image-left {
+        .text { padding-left: 5.8%; }
+      }
+      &.image-right {
+        .text { padding-right: 5.8%; }
+      }           
+    
+      .text { 
+        text-align: left;
+        
+        h2 { 
+          @include r700; font-size: 42px; text-transform: uppercase; position: relative; margin-bottom: 15%;
+          &::after { content: ''; position: absolute; top: 100%; margin-top: 20px; left: 10%; margin-left: -45px; width: 75px; height: 3px;     
+          background-color: $orange; } 
+        }
+        p { 
+          @include r400; color: $grey; text-align: left; 
+        }
+        a.button {
+          position: relative; padding: 20px 30px; margin-top: 40px; display: inline-block;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        img, .text { float: none; width: 100%; }
+      }
+
+    }  
+  }
+    
+ 
+ 
+  #partner-logos {
+    .logos { 
+      max-width: 20%; display: inline-block; margin: 5% 2%;   
+    } 
+  } 
+  
+  
+  #features { 
+    .unit {
+      max-width: 33.33%; position: relative; display: inline-block; padding: 0 3.3% 5.8% 3.3%; margin: 0 auto;
+
+      }
+      .text { 
+        padding-left: 100px; text-align: left;
+        h3 {
+          @include r700; font-size: 21px; color: $navy; padding-bottom: 44px; text-transform: capitalize; 
+          &::after { content: ''; position: absolute; top: 10%; margin-top: 25px; margin-left: -140px; width: 250px; height: 3px;     
+          background-color: $light-backdrop; } 
+        }
+        p {
+          max-width: 200px;
+        }
+      }
+      .icon {
+        position: absolute; left: 10%; top: 0; 
+      }
+    } 
+  
+  
+  #team {
+    &.bg-image { background-image: url('../img/collage-bg.png'); background-size: cover; }
+      header.section-header h2 { color: $white;
+        &::after { content: ''; position: absolute; top: 100%; margin-top: 30px; left: 50%; margin-left: -35px; width: 75px; height: 3px; background-color: $orange; } 
+     }
+     .flex-parent {
+     .flex-child {
+       h3 { 
+         @include r400; font-size: 28px; color: $white; text-transform: capitalize; padding-top: 45px;
+         }
+       p {
+          @include r500; font-size: 15px; line-height: 26px; color: $silver; padding: 30px 30px 40px 30px;  
+          }
+      }
+     }
+  }
+  
+  
+  #banner {
+    p { 
+      color: $white; @include r500; font-size: 30px; display: inline-block; max-width: 550px;  
+      }
+    a.button.blue { min-width: 200px; padding: 20px 40px; font-size: 18px; display: inline-block; margin-left: 22px; }
+  }
+  
+  
+  #work {
+    &.bg-image { background-image: url('../img/collage-bg.png'); background-size: cover; }
+      header.section-header h2 { color: $white;
+        &::after { content: ''; position: absolute; top: 100%; margin-top: 30px; left: 50%; margin-left: -35px; width: 75px; height: 3px; background-color: $orange; } 
+      }
+      p { color: $silver; }
+      .img-grid {
+        max-width: 100%; display: flex; flex-wrap: wrap;  
+        .tiles {
+          max-width: 25%; height: auto; display: flex;   
+        }
+      }
+  }
+  
+  #rates {
+      h2 { 
+        text-align: left;
+        &::after { content: ''; position: absolute; top: 100%; margin-top: 30px; right: 100%; left: 3%; width: 75px; height: 3px; background-color: $orange; 
+        }
+      }
+      .section-header p { 
+        text-align: left; margin: 0; 
+        } 
+      p { 
+        padding-bottom: 0; 
+      }
+  }
+  
+  #testimonial {
+    &.bg-image { background-image: url('../img/pattern-bg.png'); background-size: cover; }
+      header.section-header h2 { color: $white;
+        &::after { content: ''; position: absolute; top: 100%; margin-top: 30px; left: 50%; margin-left: -35px; width: 75px; height: 3px; background-color: $orange; }
+      }
+      p { color: silver; }
+      blockquote {
+       float: left; position: relative; max-width: 50%; padding-left: 17%; padding-right: 4.2%; padding-bottom: 6%; 
+        .text { text-align: left; 
+        cite { @include r400; font-style: normal; }
+        p { font-size: 15px; line-height: 26px; padding-top: 30px; }
+        }
+        img { position: absolute; top: 0; left: 0; right: 100%;
+        }  
+      }
+  }
+      
+      
+  
+
+  
+     
+   

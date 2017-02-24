@@ -1,1 +1,1 @@
-# drop-science
+# super simple
